@@ -67,5 +67,9 @@ else:
 
     
 #ask for a password
-password= int(input("What is your password?"))
-print(password)
+password= input("What is your password?")
+if len(password) >= 8 and any(char.isdigit() for char in password):
+    print("Password is valid")
+else:
+    print("Passwird is invalid" /
+    "it must be at least 8 characters long and contain at least one digit.")
