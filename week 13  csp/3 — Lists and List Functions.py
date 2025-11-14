@@ -96,13 +96,18 @@ print(numbers)
 # Practice Problems:
 
 # Create a list with 5 of your favorite foods.
+fruit_list = ['orange','pineapple','apple','banana','blueberries']
 
 # Print the second and last item.
-
+print(fruit_list[1])
+print(fruit_list[-1])
 # Add a new item using .append().
-
+fruit_list.append('cherry')
+print(fruit_list)
 # Remove the first item using .pop(0).
-
+fruit_list.pop(0)
+print(fruit_list)
 # Reverse your list using .reverse().
-
+fruit_list.reverse()
+print(fruit_list)
 # Create a list of 3 lists (matrix), and access the middle element.
