@@ -3,6 +3,58 @@
 
 # Topics Covered:
 # Creating lists, indexing, slicing, appending, popping, sorting, reversing.
+#lists are part of the collections family in python
+#creating a list
+my_list = [1,2,3,4,5]
+print(my_list)
+print(len(my_list))
+print(type(my_list)) #tells you the type of list
+print(my_list[0]) #1
+print(my_list[1:4]) # [2,3,4]
+print(my_list[1:])# 2 3 4 5
+print(my_list[:-1])# 1 2 3 4
+#reverse the list
+print(my_list[::-1])#reversed
+#modifying a list
+my_list.append(6) #adds 6 to the end of the list
+print(my_list)# 1,2,3,4,5,6
+# add 7 and 8 to the list
+my_list.extend([7,8])
+print(my_list)# 1 2 3 4 5 6 7 8
+#remove the last item
+my_list.pop()
+print(my_list)# 1-7
+# remove the item in index 2
+my_list.pop(2)
+print(my_list)
+#sort in ascending order
+my_list.sort()
+print(my_list)
+#reverse the list
+my_list.reverse()
+print(my_list)
+#remove a single value (4)
+my_list.remove(4)
+print(my_list)
+#remove the last item using negative index
+#my_list.remove(-1)
+print(my_list)
+#add 50 more to the end
+new_list = list(range(12,120))
+print(new_list)
+my_list.append(new_list)
+print(my_list)
+#my_list.extend(new_list)
+#print(my_list)
+#print every 3rd number
+print(my_list[ : : 3])
+#remove every third element
+# every_third_element = new_list[2::3]
+# print(every_third_element)
+#or
+del my_list[::3]
+print(len(my_list))
+print(my_list)
 
 # Examples:
 
