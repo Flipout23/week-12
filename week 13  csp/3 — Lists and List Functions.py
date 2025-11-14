@@ -56,6 +56,26 @@ del my_list[::3]
 print(len(my_list))
 print(my_list)
 
+#why is a list more useful than a variable?
+# a ;list can hold multiple values
+#while a variable can only hold one value at a time
+cakes = ['chocolate', 'vanilla', 'red velvet', 'carrot']
+print(cakes)
+#access the first item
+print(cakes[0])#chocolate
+#access the last item
+print(cakes[-1])#carrot
+#want to chocolate cake instead of vanilla
+cakes[0]= 'strawberry'
+print(cakes)
+cakes[1] = 'chocolate'
+print(cakes)
+# remove the last cake
+cakes.pop()
+print(cakes)
+#insert a new cake at index 2
+cakes.insert(2, 'funfetti')
+print(cakes)
 # Examples:
 
 my_list = ['apple', 'banana', 'cherry']
