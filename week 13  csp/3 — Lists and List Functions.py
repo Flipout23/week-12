@@ -110,4 +110,32 @@ print(fruit_list)
 # Reverse your list using .reverse().
 fruit_list.reverse()
 print(fruit_list)
-# Create a list of 3 lists (matrix), and access the middle element.
+
+#sets = {1,2,3}
+#sets are unordered collections of unique items
+#sets do not support slicing or indexing
+#sets are mutable meaning you can add or remove items
+#sets are created using curly brackets
+#sets dont allow duplacite items
+my_set = {1,2,3,4,5}
+print(my_set)
+print(type(my_set))
+#add one item to the list
+my_set.add(6)
+print(my_set)
+#remove an item from the set
+my_set.remove(3)
+print(my_set)
+#check if an item is in the set
+print(4 in my_set)
+print(3 in my_set)
+
+#tuples are ordered collections of lists
+# tuples are immutable meaning you cannot modify them after creation
+# tuples are created using parenthesis
+my_tuple = (1,2,3,4,5)
+print(my_tuple)
+print(type(my_tuple))
+print(my_tuple[0])
+print(my_tuple[1:4])
+#trying to modify the tuple will result in an error.
