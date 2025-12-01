@@ -39,6 +39,7 @@ for row in num_pad:
 
 # List comprehensions provide a concise way to create lists.
 
+
 # Examples:Objective:
 # Students will manipulate nested lists and understand basic list comprehensions.
 
@@ -68,10 +69,25 @@ print(first_col)       # [1, 4, 7]
 
 # Build a matrix variable containing 3 lists of 3 numbers each.
 
+matrix_1 =  [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8]
+]
+
 # Print the first list.
+print(matrix_1[0])
 
 # Print the second item from the third list.
+print(matrix_1[2][1]) 
 
 # Use a list comprehension to extract the last item from each sub-list.
+last_list = [row[2] for row in matrix_1]
+print(last_list) 
 
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+squares = [x**2 for x in range(1,11)]
+for x in range(1,11):
+    print(x**2)
+
+print(squares)
